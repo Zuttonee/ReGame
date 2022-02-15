@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Complete Bootstrap 4 Website Layout</title>
+
+	<link href="css/bootstrap/bootstrap.css" rel="stylesheet" type="text/css">
+	<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js" integrity="sha384-wHAiFfRlMFy6i5SRaxvfOCifBUQy1xHdJ/yoi7FRNXMRBu5WHdZYu1hA6ZOblgut" crossorigin="anonymous"></script>
+	<script src="https://use.fontawesome.com/releases/v5.0.8/js/all.js"></script>
+
+	<link href="css/scrollbar.css" rel="stylesheet" type="text/css">
+
+	<link href="old/test.css" rel="stylesheet">
+
+	<link href="css/style.css" rel="stylesheet" type="text/css">
+	<link href="css/header.css" rel="stylesheet" type="text/css">
+	<link href="css/colorChange.css" rel="stylesheet" type="text/css">
+</head>
+<body>
+
+<!-- Header -->
+
+<div class="header d-none d-md-block">
+	<a href="index.html">
+		<div class="logo">
+			<img src="images/Remivie Logo toolbar.png">
+			<h1>Re: Game PC</h1>
+		</div>
+	</a>
+</div>
+
+
+<!-- Navigation -->
+
+<nav class="navbar navbar-expand-md navbar-dark bg-light sticky-top">
+	<div class="container-fluid">
+		<a class="navbar-brand d-md-none" href="index.html"><img src="images/Remivie Logo toolbar.png" style="width:32px;"><span style="padding-left: 10px">Re: Game PC</span></a>
+		<button class="navbar-toggler ml-auto" type="button" data-toggle="collapse" data-target="#navbarResponsive">
+			<span class="navbar-toggler-icon"></span>
+		</button>
+
+		<div class="collapse navbar-collapse" id="navbarResponsive">
+			<ul class="navbar-nav ml-5">
+				<li class="navbar-item">
+					<a class="nav-link" href="index.html">Home</a>
+				</li>
+
+				<li class="navbar-item active">
+					<a class="nav-link" href="game.html">Game</a>
+				</li>
+
+				<li class="navbar-item">
+					<a class="nav-link" href="news.html">News</a>
+				</li>
+
+				<li class="navbar-item">
+					<a class="nav-link" href="#">Esports</a>
+				</li>
+
+				<li class="navbar-item d-md-none">
+					<a class="nav-link" href="account.html">Account</a>
+				</li>
+			</ul>
+			<ul class="navbar-nav ml-auto mp-5">
+				<li class="navbar-item d-none d-md-block">
+					<a class="nav-link" href="account.html">Account</a>
+				</li>
+			</ul>
+		</div>
+	</div> 
+</nav>
+
+<!-- Search Bar -->
+<div id="searchGameContainer" class="container">
+	<div class="game-container">
+		<div class="banner">
+			<h2>Keywords: </h2>
+		</div>
+		<div class="m-2">
+			<input type="text" class="form-control" id="searchGame" placeholder="Search">
+			<button type="submit" class="btn btn-primary my-2 w-100" onclick="searchGame()">Search</button>
+		</div>
+	</div>
+
+<!-- Search Result-->
+	<div class="game-container">
+		<div class="banner">
+			<h2 id="searchGameResult">Game Result</h2>
+		</div>
+
+		<div class="container">
+			<div class="row" id="searchGameContainer">
+
+				<div class="col-6 col-md-4 col-lg-3">
+					<div class="card px-5">
+						<img src="images/red_dead_redemption_2_cover_art_1.png" class="img-fluid card-img-top">
+						<div class="card-block">
+							<h1 class="card-title">Red Dead Redemption 2</h1>
+						</div>
+					</div>
+				</div>
+
+				<div class="col-6 col-md-4 col-lg-3">
+					<div class="card px-5">
+						<img src="images/Call of Duty IV.png" class="img-fluid card-img-top">
+						<div class="card-block">
+							<h1 class="card-title">Call of Duty IV</h1>
+						</div>
+					</div>
+				</div>
+
+				<div class="col-6 col-md-4 col-lg-3">
+					<div class="card px-5">
+						<img src="images/PUBG.png" class="img-fluid card-img-top">
+						<div class="card-block">
+							<h1 class="card-title">Player Unknown's Battleground</h1>
+						</div>
+					</div>
+				</div>
+
+				<div class="col-6 col-md-4 col-lg-3">
+					<div class="card px-5">
+						<img src="images/BattleField V.png" class="img-fluid card-img-top">
+						<div class="card-block">
+							<h1 class="card-title">BattleField V</h1>
+						</div>
+					</div>
+				</div>
+
+				<div class="col-6 col-md-4 col-lg-3">
+					<div class="card px-5">
+						<img src="images/red_dead_redemption_2_cover_art_1.png" class="img-fluid card-img-top">
+						<div class="card-block">
+							<h1 class="card-title">Red Dead Redemption 2</h1>
+						</div>
+					</div>
+				</div>
+
+				<div class="col-12 text-center">
+					<p>-- End of Result --</p>
+				</div>
+				
+			</div>
+		</div>
+	</div>
+</div>
+
+<!-- Footer -->
+<footer class="page-footer font-small pt-4 mt-5" style="background-color: #20c997">
+
+    <div class="container-fluid text-center text-md-left">
+
+      	<div class="row">
+			<div class="col-md-3 mt-md-0 mt-3 text-center">
+				<img src="images/Remivie Logo toolbar.png" class="img-fluid">
+			</div>
+
+        	<div class="col-md-4 mt-md-0 mt-3">
+				<h5 class="text-uppercase font-weight-bold">Footer text 1</h5>
+				<p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Expedita sapiente sint, nulla, nihil repudiandae commodi voluptatibus corrupti animi sequi aliquid magnam debitis, maxime quam recusandae harum esse fugiat. Itaque, culpa?</p>
+			</div>
+
+        	<hr class="clearfix w-100 d-md-none pb-3">
+
+			<div class="col-md-4 mb-md-0 mb-3">
+				<h5 class="text-uppercase font-weight-bold">Footer text 2</h5>
+				<p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Optio deserunt fuga perferendis modi earum commodi aperiam temporibus quod nulla nesciunt aliquid debitis ullam omnis quos ipsam, aspernatur id excepturi hic.</p>
+			</div>
+		</div>
+    </div>
+
+	<div class="text-center py-3" style="background-color: #158362; color:mintcream">
+		© 2018 Copyright: Re: Game Studios
+	</div>
+	
+</footer>
+
+<script src="js/searchGame.js"></script>
+<script src="js/bootstrap/bootstrap.js"></script>
+</body>
+</html>
+
+
+
+

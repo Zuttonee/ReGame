@@ -1,0 +1,37 @@
+/* Header */
+.header {
+    padding: 15px;
+    text-align: center;
+    background: #5ECEBF;
+    background-image: linear-gradient(to bottom, rgba(94,206,191,0) , rgba(80,165,166,100));
+    color: white;
+    overflow: auto;
+  }
+
+.header a:active,
+.header a:link,
+.header a:visited {
+    color: white;
+    background-color: transparent;
+    text-decoration: none;
+}
+
+/* The Logo and name */
+.logo {
+    overflow: hidden;
+    padding-left: 100px;
+    vertical-align: middle;
+}
+
+.logo img {
+    height: 65px;
+    width: 65px;
+    float: left;
+}
+
+.logo h1{
+    float: left;
+    font-size: 30px;
+    margin: 0 auto;
+    padding: 14px 15px
+}

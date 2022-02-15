@@ -1,0 +1,148 @@
+* {
+    box-sizing: border-box;
+  }
+  
+  /* Style the body */
+  body {
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
+    background: #046465;
+    background-image: linear-gradient(to bottom, rgba(3,79,180,0) , rgba(2,54,57,100));
+  }
+
+/* main body */
+  .contents {
+    width: 80%;
+    height: auto;
+    padding: 15px;
+    margin: 0 auto;
+    text-align: center;
+    background: #CFF5EE;
+    overflow: auto;
+  }
+
+  .keywords {
+    width: 90%;
+    margin: 0 auto;
+    overflow: auto;
+  }
+
+  .keywords h2 {
+    width: 15%;
+    margin-left: auto;
+    float: left;
+    color: #4A9798;
+    font-size: 18px;
+    margin-top: 22px
+    
+  }
+
+  .keywords .search-bar {
+    float: left;
+    background-color: #50A5A6;
+    width: 80%;
+    height: 40px;
+    border: 2px solid #707070;
+    border-radius: 20px;
+    overflow: auto;
+  }
+
+  .keywords .search-bar input{
+    float: left;
+    width: 95%;
+  }
+
+ 
+  
+
+/* game-container */
+  .game-container {
+    background-color: #CBF3EC;
+    margin: 0 auto;
+    border-style: solid;
+    border-width: 2px;
+    border-color: #707070;
+    margin: 10px 0px 10px 0px
+  }
+
+  .banner {
+    background-color: #90C9C1;
+    height: 55px;
+    width: 100%;
+    border-bottom-style: solid;
+    border-width: 2px;
+    border-color: #707070;
+
+  }
+
+  .banner h2 {
+    float: left;
+    margin: 0;
+    padding-top: 10px;
+    padding-left: 10px;
+    color: #F1FFFF;
+  }
+
+  .banner h1{
+    float: left;
+    margin: 0;
+    padding-top: 10px;
+    padding-left: 10px;
+    color: #F1FFFF;
+    font-size: 18px
+  }
+
+  .game-container h1 {
+    margin: 0;
+    padding-top: 10px;
+    padding-left: 10px;
+    color: #046465;
+    font-size: 18px
+  }
+
+  /* Footer */
+  .footer {
+    padding: 20px;
+    margin-top: 40px;
+    text-align: center;
+    background: #046465;
+  }
+
+  .see-more-link a:link {
+    color: white; 
+    background-color: transparent; 
+    text-decoration: none;
+  }
+  
+  .see-more-link a:visited {
+    color: white;
+    background-color: transparent;
+    text-decoration: none;
+  }
+  
+  .see-more-link a:hover {
+    color: white;
+    background-color: transparent;
+    text-decoration: underline;
+  }
+  
+  .see-more-link a:active {
+    color: white;
+    background-color: transparent;
+    text-decoration: underline;
+  }
+  
+  /* Responsive layout - when the screen is less than 700px wide, make the two columns stack on top of each other instead of next to each other */
+  @media screen and (max-width: 700px) {
+    .row {   
+      flex-direction: column;
+    }
+  }
+  
+  /* Responsive layout - when the screen is less than 400px wide, make the navigation links stack on top of each other instead of next to each other */
+  @media screen and (max-width: 400px) {
+    .navbar a {
+      float: none;
+      width: 100%;
+    }
+  }

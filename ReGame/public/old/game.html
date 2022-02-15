@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="test.css">
+    <link rel="stylesheet" href="header.css">
+    <link rel="stylesheet" href="dropmenue.css">
+
+    <title>Re: Game</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+
+<body>
+<div w3-include-html="header.html"></div>
+
+<div class="contents">
+
+    <div class="keywords">
+        <span class="contains">
+            <h2>Keywords:</h2>
+        <span class="search-bar">
+            <input type="text" placeholder="Search..">
+        </span>
+        </span>
+    </div>
+
+    
+        <button class="tablink " onclick="openPage('Home', this, 'red')" style="border-radius: 15px 0px 0px 15px">Home</button>
+        <button class="tablink" onclick="openPage('News', this, 'green')">News</button>
+        <button class="tablink" onclick="openPage('Contact', this, 'blue')">Contact</button>
+        <button class="tablink " onclick="openPage('About', this, 'orange')" style="border-radius: 0px 15px 15px 0px">About</button>
+        
+        <div id="Home" class="tabcontent">
+          <h3>Home</h3>
+          <p>Home is where the heart is..</p>
+        </div>
+        
+        <div id="News" class="tabcontent">
+          <h3>News</h3>
+          <p>Some news this fine day!</p> 
+        </div>
+        
+        <div id="Contact" class="tabcontent">
+          <h3>Contact</h3>
+          <p>Get in touch, or swing by for a cup of coffee.</p>
+        </div>
+        
+        <div id="About" class="tabcontent">
+          <h3>About</h3>
+          <p>Who we are and what we do.</p>
+        </div>
+        
+   
+    
+  
+</div>
+
+</div>
+
+<div class="footer">
+</div>
+
+<script src="dropmenu.js"></script>
+<script src="js/w3.js"></script>
+<script>
+    w3.includeHTML();
+</script>
+
+</body>
+</html>
